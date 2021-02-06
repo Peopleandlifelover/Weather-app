@@ -1,0 +1,27 @@
+h4 {
+  color: #393e46;
+  font-family: "Indie Flower", cursive;
+  font-size: 8px;
+  left: 5px;
+}
+.container {
+  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+}
+
+.weatherApp {
+  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+}
+.city {
+  position: fixed;
+  right: 100px;
+  top: 15px;
+}
+
+.cell {
+  text-align: center;
+  flex-basis: 33.3333%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  -webkit-box-flex: 0;
+  -webkit-tap-highlight-color: #0000;
+}
