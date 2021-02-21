@@ -1,8 +1,26 @@
-h4 {
-  color: #393e46;
-  font-family: "Indie Flower", cursive;
-  font-size: 8px;
-  left: 5px;
+body {
+  font-family: "Segoe UI", "Helvetica Neue", Arial, "Noto Sans",
+    "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  color: #333f6e;
+  font-size: 20px;
+}
+
+h3 {
+  color: rgb(33, 37, 41);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0px;
+  max-width: 100%;
+  padding: 0 12px;
+  text-align: center;
+
 }
 .container {
   background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
