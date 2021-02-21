@@ -109,7 +109,7 @@ img.forecast {
 
 .card {
   border: 0;
-  background: transparent;
+  background: transparent!important;
 }
 .form-control {
   display: inline;
