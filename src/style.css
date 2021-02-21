@@ -137,6 +137,36 @@ img.forecast {
   margin-top: -3px;
   padding: 5px 10px;
 }
+
+clock {
+  
+}
+
+.temperature-section img {
+  float: left;
+  margin-left: -5px;
+  width: 85px;
+}
+
+.temperature-section .temperature-part {
+  float: left;
+}
+
+.temperature-part span {
+  color: #333f6e;
+  float: left;
+  font-size: 40px;
+  font-weight: 400;
+  margin: 0;
+  line-height: 2;
+}
+
+.temperature-part .units {
+  font-size: 16px;
+  left: 5px;
+  position: relative;
+  top: 15px;
+}
 footer {
   text-align: center;
   color: #828794;
