@@ -1,5 +1,3 @@
-let icon = document.querySelector(".weather__icon--today");
-
 function frequent(number) {
   var count = 0;
   var sortedNumber = number.sort();
@@ -104,14 +102,14 @@ function showTemperature(response) {
   document.querySelector("#wind").innerHTML = wind;
   document.querySelector("#humidity").innerHTML = humidity;
   document.querySelector("#feels-like").innerHTML = Math.round(feelsLike);
-  document.querySelector("#icon").setAttribute("src", `images/${icon}@2x.png`);
+  document.querySelector("#icon").setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
   document.querySelector("#icon").setAttribute("alt", description);
   
   iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
   iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
-
+n
 function getForecast(forecast) {
   let array = forecast.data.list;
 
@@ -256,12 +254,6 @@ function showPosition(position) {
   apiUrl = `${targetUrl}lat=${lat}&lon=${lon}&units=${unit}&appid=${apiKey}`;
 
   axios.get(apiUrl).then(getForecast);
-   icon.setAttribute(
-        "src",
-        "http://openweathermap.org/img/w/" +
-          response.data.weather[0].icon +
-          ".png"
-      );
 }
 
 function searchCurrentLocation() {
