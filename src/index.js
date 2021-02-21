@@ -104,12 +104,9 @@ function showTemperature(response) {
   document.querySelector("#feels-like").innerHTML = Math.round(feelsLike);
   document.querySelector("#icon").setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
   document.querySelector("#icon").setAttribute("alt", description);
-  
-  iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
-  iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
-n
+
 function getForecast(forecast) {
   let array = forecast.data.list;
 
