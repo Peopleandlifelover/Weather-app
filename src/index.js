@@ -1,3 +1,5 @@
+let icon = document.querySelector(".weather__icon--today");
+
 function frequent(number) {
   var count = 0;
   var sortedNumber = number.sort();
@@ -77,6 +79,7 @@ let fahrenheit = null;
 let fahrenheitFeelsLike = null;
 let unit = null;
 
+
 function showTemperature(response) {
   let city = response.data.name;
   let country = response.data.sys.country;
@@ -86,7 +89,7 @@ function showTemperature(response) {
   let wind = Math.round(response.data.wind.speed);
   let humidity = Math.round(response.data.main.humidity);
   let feelsLike = response.data.main.feels_like;
-  let icon = response.data.weather[0].icon;
+  let icon = document.querySelector("#icon");
   showTime(new Date(response.data.dt * 1000));
 
   celsius = temp;
@@ -104,6 +107,8 @@ function showTemperature(response) {
   document.querySelector("#icon").setAttribute("src", `images/${icon}@2x.png`);
   document.querySelector("#icon").setAttribute("alt", description);
   
+  iconElement.setAttribute("src", `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
+  iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
 
@@ -225,6 +230,7 @@ function searchCity(city) {
   apiUrl = `${targetUrl}q=${city}&units=${unit}&appid=${apiKey}`;
 
   axios.get(apiUrl).then(getForecast);
+
 }
 
 function showPosition(position) {
@@ -250,6 +256,12 @@ function showPosition(position) {
   apiUrl = `${targetUrl}lat=${lat}&lon=${lon}&units=${unit}&appid=${apiKey}`;
 
   axios.get(apiUrl).then(getForecast);
+   icon.setAttribute(
+        "src",
+        "http://openweathermap.org/img/w/" +
+          response.data.weather[0].icon +
+          ".png"
+      );
 }
 
 function searchCurrentLocation() {
@@ -295,10 +307,12 @@ function convertToCelsius(event) {
 let celsiusLink = document.querySelector("#toCelsius");
 celsiusLink.addEventListener("click", convertToCelsius);
 
+
+
 function searchCities(event) {
   event.preventDefault();
   let targetCity = event.target.innerHTML;
-
+  
   searchCity(targetCity);
 }
 document.querySelector("#prague").addEventListener("click", searchCities);
