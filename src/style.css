@@ -58,6 +58,16 @@ li#day {
   line-height: 1;
   margin-top: 5px;
 }
+
+p#description {
+  color: #434752;
+  font-size: 13px;
+  font-weight: bold;
+  margin: 0;
+  text-transform: capitalize;
+}
+
+
 .container {
   background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
 }
@@ -78,6 +88,62 @@ li#day {
   flex-shrink: 0;
   -webkit-box-flex: 0;
   -webkit-tap-highlight-color: #0000;
+}
+
+ul.weather {
+  color: #434752;
+  font-size: 13px;
+  position: relative;
+  margin-bottom: 0;
+}
+
+ul.weather li {
+  display: inline-block;
+  padding-right: 10px;
+}
+
+img.forecast {
+  display: block;
+  margin: -10px auto;
+  width: 70px;
+}
+
+.weather-page {
+  max-width: 500px;
+  margin: 40px auto;
+}
+.weather-app {
+  background: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+  border: 1px solid #ececec !important;
+  border-radius: 4px;
+  box-shadow: rgb(0 0 0 / 15%) 0px 8px 16px 0px;
+  display: block;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.card {
+  border: 0;
+  background: transparent;
+}
+.form-control {
+  display: inline;
+  margin-bottom: 5px;
+  width: 150px;
+}
+
+.fa-map-marker-alt {
+  color: #1476a5;
+  cursor: pointer;
+  font-size: 1.9rem;
+  position: relative;
+  top: 3px;
+  transition: all 200ms ease-in-out;
+}
+
+.btn-secondary {
+  margin-top: -3px;
+  padding: 5px 10px;
 }
 footer {
   text-align: center;
