@@ -22,6 +22,13 @@ h3 {
   text-align: center;
 
 }
+a {
+  color: #3858a8;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
 
 ul {
   list-style: none;
@@ -67,21 +74,6 @@ p#description {
   text-transform: capitalize;
 }
 
-.city {
-  position: fixed;
-  right: 100px;
-  top: 15px;
-}
-
-.cell {
-  text-align: center;
-  flex-basis: 33.3333%;
-  flex-grow: 0;
-  flex-shrink: 0;
-  -webkit-box-flex: 0;
-  -webkit-tap-highlight-color: #0000;
-}
-
 ul.weather {
   color: #434752;
   font-size: 13px;
@@ -114,6 +106,7 @@ img.forecast {
   padding: 10px;
 }
 
+
 .card {
   border: 0;
   background: transparent;
@@ -138,8 +131,9 @@ img.forecast {
   padding: 5px 10px;
 }
 
-clock {
-  
+#clock {
+  margin: 0;
+  font-size: 30px;
 }
 
 .temperature-section img {
@@ -167,6 +161,25 @@ clock {
   position: relative;
   top: 15px;
 }
+
+.week-prediction {
+  text-align: center;
+}
+.prediction {
+  font-size: 13px;
+}
+
+.units .active {
+  color: #000000;
+  cursor: default;
+  font-weight: bold;
+}
+
+.units .active:hover {
+  text-decoration: none;
+}
+
+
 footer {
   text-align: center;
   color: #828794;
