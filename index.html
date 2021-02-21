@@ -55,42 +55,54 @@
     </div>
 </div>
 
-                <div class="city">
-                    <label for="searchCity" class="form-label">Search city</label>
-                    <input type="city" class="form-control" id="city-input" aria-describedby="emailHelp">
-                    <div id="emailHelp" class="form-text"></div>
-                </div>
-
-                <br>
-
-                <hr>
-
-                <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" />
-
-
                 <div class="row">
-                    <div class="col-md-4">
-                        <div class="row">
-                            <div class="col-md-4"></div> <!-- this column empty -->
-                            <div class="col-md-4 cell"> Mon <br> 6°C <br> <i class="fas fa-cloud-sun"></i> </div>
-                            <div class="col-md-4 cell"> Tue <br> 3°C <br> <i class="fas fa-cloud"></i></div>
+                
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <h1 id="city"></h1>
+                                <ul class="datetime">
+                                    <li id="last-update">Last updated:</li>
+                                    <li id="day"></li>
+                                    <li id="date"></li>
+                                    <li><span id="clock"></span> <span id="amPm"></span></li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-8">
-                        <div class="row">
-                            <div class="col-md-2 cell"> Wed <br> 4°C <br> <i class="fas fa-cloud-showers-heavy"></i>
+                
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                
+                                <div class="row">
+                                    <div class="col temperature-section">
+                                        <div class="clearfix">
+                                            <img src="" alt="" id="icon" class="float-left" />
+                                            <div class="temperature-part">
+                                                <span id="temperature"></span>
+                                                <span class="units"><a href="#" id="toCelsius" class="active">°C</a> |
+                                                    <a href="#" id="toFahrenheit">°F</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                
+                                <div class="row">
+                                    <div class="col">
+                                        <p id="description"></p>
+                                        <ul class="weather">
+                                            <li>Cloudiness: <span id="cloudiness"></span>%</li>
+                                            <li>Feels like: <span id="feels-like"></span>°</li>
+                                            <li>Humidity: <span id="humidity"></span>%</li>
+                                            <li>Wind: <span id="wind"></span>km/h</li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-md-2 cell"> Thu <br> 4°C <br> <i class="fas fa-cloud-sun"></i> </div>
-                            <div class="col-md-2 cell"> Fri <br> 5°C <br> <i class="fas fa-cloud-sun"></i> </div>
-                            <div class="col-md-2 cell"> Sat <br> 3°C <br> <i class="fas fa-cloud-sun"></i> </div>
-                            <div class="col-md-2 cell"> Sun <br> 4°C <br> <i class="fas fa-cloud-sun"></i> </div>
-                            <div class="col-md-2"></div> <!-- this column empty -->
                         </div>
                     </div>
                 </div>
-            </form>
-        </div>
-    </div>
     <footer>
         <small>
     <i class="fas fa-mobile-alt"></i> Responsive Design
