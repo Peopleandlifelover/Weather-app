@@ -270,7 +270,7 @@ document.querySelector("#search-form").addEventListener("submit", handleClick);
 
 function convertToFahrenheit(event) {
   event.preventDefault();
-  fahrenheit = (celcius * 9) / 5 + 32;
+  fahrenheit = (celsius * 9) / 5 + 32;
   fahrenheitFeelsLike = (celsiusFeelsLike * 9) / 5 + 32;
   document.querySelector("#temperature").innerHTML = Math.round(fahrenheit);
   document.querySelector("#feels-like").innerHTML = Math.round(
